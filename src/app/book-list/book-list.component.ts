@@ -15,13 +15,14 @@ export class BookListComponent {
     {id:2,title:'book3',auther:'test'}
   ];
   result :any;
+  booksdetail:any;
   constructor(private bookservice: BookService){
-this.bookservice.getBooks().subscribe(
-  res=>{
-    this.books=res;
-  }
-);
-console.log(this.result);
+// this.bookservice.getBooks().subscribe(
+//   res=>{
+//     this.booksdetail=res;
+//   }
+// );
+// console.log(this.result);
   }
   //bookTitle: string= "My Book";
   
